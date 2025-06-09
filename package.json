@@ -1,0 +1,26 @@
+{
+  "name": "promotion-engine",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["client"],
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "jest",
+    "lint": "eslint server",
+    "client:test": "npm --prefix client test",
+    "client:lint": "npm --prefix client run lint"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "body-parser": "^1.20.2",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "jest": "^29.6.0",
+    "supertest": "^6.3.3",
+    "eslint": "^8.56.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
