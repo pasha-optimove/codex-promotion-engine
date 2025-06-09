@@ -1,0 +1,9 @@
+.app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+.result {
+  margin-top: 1rem;
+  font-weight: bold;
+}
